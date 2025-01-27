@@ -1,0 +1,105 @@
+Resolving Package Graph
+Resolved source packages
+swift-html - https://github.com/pointfreeco/swift-html @ 0.4.0
+SnapshotTesting - https://github.com/pointfreeco/swift-snapshot-testing.git @ 1.9.0
+Socket - https://github.com/Kitura/BlueSocket.git @ 1.0.200
+[!]  --- xcodebuild: Using the first of multiple matching destinations:
+{ platform:visionOS Simulator, id:2EAB35CE-56B8-4999-9CCE-162B8959CF04, OS:2.2, name:Apple Vision Pro }
+{ platform:visionOS Simulator, variant:Designed for [iPad,iPhone], id:2EAB35CE-56B8-4999-9CCE-162B8959CF04, OS:2.2, name:Apple Vision Pro }
+[DcmSwift_DcmSwiftTests] Processing empty-DcmSwift_DcmSwiftTests.plist
+[DcmSwiftTests] Compiling DcmSwiftTestsUID.swift
+[DcmSwiftTests] Compiling DcmSwiftTests.swift
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:367:63: cannot find 'NSBitmapImageRep' in scope
+                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg2000)
+                                                              ^~~~~~~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:366:25: value of type 'Any' has no member 'writeToFile'
+              _ = image.writeToFile(
+                  ~~~~~ ^~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:372:63: cannot find 'NSBitmapImageRep' in scope
+                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg)
+                                                              ^~~~~~~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:371:25: value of type 'Any' has no member 'writeToFile'
+              _ = image.writeToFile(
+                  ~~~~~ ^~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:375:63: cannot find 'NSBitmapImageRep' in scope
+                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.bmp)
+                                                              ^~~~~~~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:374:25: value of type 'Any' has no member 'writeToFile'
+              _ = image.writeToFile(
+                  ~~~~~ ^~~~~~~~~~~
+[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:623:16: cannot find 'Process' in scope
+    let task = Process()
+               ^~~~~~~
+[DcmSwift] Compiling DicomDir.swift
+[DcmSwift] Compiling Image.swift
+[DcmSwift] Compiling DicomImage.swift
+[DcmSwift] Compiling DicomFile.swift
+[DcmSwift] Compiling DcmSwift.swift
+[DcmSwift] Compiling Lock.swift
+[DcmSwift] Compiling Dictionary.swift
+[DcmSwift] Compiling PixelDataAccess.swift
+[DcmSwift] Compiling OffsetInputStream.swift
+[DcmSwift] Compiling SRDocument.swift
+[DcmSwift] Compiling SRItemNode.swift
+[DcmSwift] Compiling Dose.swift
+[DcmSwift] Compiling Plan.swift
+[DcmSwift] Compiling DicomOutputStream.swift
+[DcmSwift] Compiling Anonymizer.swift
+[DcmSwift] Compiling DataSet.swift
+[DcmSwift] Compiling DataTag.swift
+[DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftmodule -> DcmSwiftTests.swiftmodule
+[DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftdoc -> DcmSwiftTests.swiftdoc
+[DcmSwiftTests] Copy arm64-apple-xros-simulator.abi.json -> DcmSwiftTests.abi.json
+[DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftsourceinfo -> DcmSwiftTests.swiftsourceinfo
+[DcmSwift] Compiling SRMeasuredValue.swift
+[DcmSwift] Compiling DicomData.swift
+[DcmSwift] Compiling TransferSyntax.swift
+[DcmSwift] Compiling DicomInputStream.swift
+[DcmSwift] Compiling Logger.swift
+[DcmSwift] Compiling StructureSet.swift
+[DcmSwift] Compiling SRCode.swift
+[DcmSwift] Compiling DicomObject.swift
+[DcmSwift] Compiling DicomSpec.swift
+[DcmSwift] Compiling VR.swift
+[DcmSwift] Compiling PixelSequence.swift
+[DcmSwift] Compiling DicomRT.swift
+[DcmSwift] Compiling DataElement.swift
+[DcmSwift] Compiling DataItem.swift
+[DcmSwift] Compiling DataSequence.swift
+
+-----------------------------
+-- xcodebuild.nvim summary --
+-----------------------------
+
+Errors:
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:367:63
+    cannot find 'NSBitmapImageRep' in scope
+                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg2000)
+                                                                  ^~~~~~~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:366:25
+    value of type 'Any' has no member 'writeToFile'
+                  _ = image.writeToFile(
+                      ~~~~~ ^~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:372:63
+    cannot find 'NSBitmapImageRep' in scope
+                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg)
+                                                                  ^~~~~~~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:371:25
+    value of type 'Any' has no member 'writeToFile'
+                  _ = image.writeToFile(
+                      ~~~~~ ^~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:375:63
+    cannot find 'NSBitmapImageRep' in scope
+                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.bmp)
+                                                                  ^~~~~~~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:374:25
+    value of type 'Any' has no member 'writeToFile'
+                  _ = image.writeToFile(
+                      ~~~~~ ^~~~~~~~~~~
+  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:623:16
+    cannot find 'Process' in scope
+        let task = Process()
+                   ^~~~~~~
+
+  Build Failed
+
