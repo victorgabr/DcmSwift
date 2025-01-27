@@ -1,105 +1,213 @@
 Resolving Package Graph
 Resolved source packages
+Socket - https://github.com/Kitura/BlueSocket.git @ 1.0.200
 swift-html - https://github.com/pointfreeco/swift-html @ 0.4.0
 SnapshotTesting - https://github.com/pointfreeco/swift-snapshot-testing.git @ 1.9.0
-Socket - https://github.com/Kitura/BlueSocket.git @ 1.0.200
 [!]  --- xcodebuild: Using the first of multiple matching destinations:
 { platform:visionOS Simulator, id:2EAB35CE-56B8-4999-9CCE-162B8959CF04, OS:2.2, name:Apple Vision Pro }
 { platform:visionOS Simulator, variant:Designed for [iPad,iPhone], id:2EAB35CE-56B8-4999-9CCE-162B8959CF04, OS:2.2, name:Apple Vision Pro }
+[Socket] Write Auxiliary File Socket.DependencyMetadataFileList
+[Socket] Write Auxiliary File Socket.modulemap
+[Socket] Write Auxiliary File Socket.SwiftFileList
+[Socket] Write Auxiliary File Socket-OutputFileMap.json
+[Socket] Write Auxiliary File Socket.LinkFileList
+[Socket] Write Auxiliary File Socket_const_extract_protocols.json
+[Html] Write Auxiliary File Html.modulemap
+[Html] Write Auxiliary File Html.DependencyMetadataFileList
+[Html] Write Auxiliary File Html-OutputFileMap.json
+[Html] Write Auxiliary File Html.SwiftFileList
+[Html] Write Auxiliary File Html.LinkFileList
+[Html] Write Auxiliary File Html_const_extract_protocols.json
+[DcmSwift_DcmSwiftTests] Write Auxiliary File DcmSwift_DcmSwiftTests.DependencyMetadataFileList
+[DcmSwift_DcmSwiftTests] Write Auxiliary File empty-DcmSwift_DcmSwiftTests.plist
+[DcmSwift] Write Auxiliary File DcmSwift_const_extract_protocols.json
+[DcmSwiftTests] Write Auxiliary File empty-DcmSwiftTests.plist
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests_const_extract_protocols.json
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests.SwiftConstValuesFileList
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests.SwiftFileList
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests.LinkFileList
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests-OutputFileMap.json
+[DcmSwiftTests] Write Auxiliary File resource_bundle_accessor.swift
+[DcmSwiftTests] Write Auxiliary File DcmSwiftTests.DependencyMetadataFileList
+[DcmSwift] Write Auxiliary File DcmSwift.SwiftFileList
+[DcmSwift] Write Auxiliary File DcmSwift.LinkFileList
+[DcmSwift] Write Auxiliary File DcmSwift-OutputFileMap.json
+[DcmSwift] Write Auxiliary File DcmSwift.modulemap
+[DcmSwift] Write Auxiliary File DcmSwift.DependencyMetadataFileList
+[Socket] Copy Socket.modulemap -> Socket.modulemap
+[Html] Copy Html.modulemap -> Html.modulemap
 [DcmSwift_DcmSwiftTests] Processing empty-DcmSwift_DcmSwiftTests.plist
-[DcmSwiftTests] Compiling DcmSwiftTestsUID.swift
-[DcmSwiftTests] Compiling DcmSwiftTests.swift
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:367:63: cannot find 'NSBitmapImageRep' in scope
-                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg2000)
-                                                              ^~~~~~~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:366:25: value of type 'Any' has no member 'writeToFile'
-              _ = image.writeToFile(
-                  ~~~~~ ^~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:372:63: cannot find 'NSBitmapImageRep' in scope
-                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg)
-                                                              ^~~~~~~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:371:25: value of type 'Any' has no member 'writeToFile'
-              _ = image.writeToFile(
-                  ~~~~~ ^~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:375:63: cannot find 'NSBitmapImageRep' in scope
-                file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.bmp)
-                                                              ^~~~~~~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:374:25: value of type 'Any' has no member 'writeToFile'
-              _ = image.writeToFile(
-                  ~~~~~ ^~~~~~~~~~~
-[x] /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:623:16: cannot find 'Process' in scope
-    let task = Process()
-               ^~~~~~~
-[DcmSwift] Compiling DicomDir.swift
-[DcmSwift] Compiling Image.swift
-[DcmSwift] Compiling DicomImage.swift
-[DcmSwift] Compiling DicomFile.swift
-[DcmSwift] Compiling DcmSwift.swift
-[DcmSwift] Compiling Lock.swift
-[DcmSwift] Compiling Dictionary.swift
-[DcmSwift] Compiling PixelDataAccess.swift
-[DcmSwift] Compiling OffsetInputStream.swift
-[DcmSwift] Compiling SRDocument.swift
-[DcmSwift] Compiling SRItemNode.swift
-[DcmSwift] Compiling Dose.swift
-[DcmSwift] Compiling Plan.swift
-[DcmSwift] Compiling DicomOutputStream.swift
-[DcmSwift] Compiling Anonymizer.swift
+[DcmSwift_DcmSwiftTests] Copying test.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_dose_1.2.826.0.1.3680043.8.274.1.1.6549911257.77961.3133305374.424.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_RTXPLAN.20110509.1010_Irregular.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_RTSTRUCT.2.16.840.1.113669.2.931128.509887832.20120106104805.776010.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_RTDOSE.2.16.840.1.113669.2.931128.509887832.20120106104806.549750.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_RD.1.2.246.352.71.7.2088656855.452404.20110921073629.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_HITTest1Fld27.XA.Spezial_01HIT_.3.1.2012.03.23.10.48.59.159.25129747.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_DicomRTDose.dcm
+[DcmSwift_DcmSwiftTests] Copying rt_DOSE.20110509.1010_Irregular.dcm
+[DcmSwift_DcmSwiftTests] Copying reportsi.dcm
+[DcmSwift_DcmSwiftTests] Copying reportlp.dcm
+[DcmSwift_DcmSwiftTests] Copying reportki.dcm
+[DcmSwift_DcmSwiftTests] Copying report19.dcm
+[DcmSwift_DcmSwiftTests] Copying report18.dcm
+[DcmSwift_DcmSwiftTests] Copying report17.dcm
+[DcmSwift_DcmSwiftTests] Copying report16.dcm
+[DcmSwift_DcmSwiftTests] Copying report15.dcm
+[DcmSwift_DcmSwiftTests] Copying report14.dcm
+[DcmSwift_DcmSwiftTests] Copying report13.dcm
+[DcmSwift_DcmSwiftTests] Copying report12.dcm
+[DcmSwift_DcmSwiftTests] Copying report11.dcm
+[DcmSwift_DcmSwiftTests] Copying report10.dcm
+[DcmSwift_DcmSwiftTests] Copying report09.dcm
+[DcmSwift_DcmSwiftTests] Copying report05.dcm
+[DcmSwift_DcmSwiftTests] Copying report04.dcm
+[DcmSwift_DcmSwiftTests] Copying report03.dcm
+[DcmSwift_DcmSwiftTests] Copying report02.dcm
+[DcmSwift_DcmSwiftTests] Copying report01.dcm
+[DcmSwift_DcmSwiftTests] Copying XA_JPEGLossless_MULTI_MONOCHROME2_8_AcmeProducts_NULL_NULL_NULL_25.dcm
+[DcmSwift_DcmSwiftTests] Copying US_RLELossless_MULTI_PALETTE\ COLOR_8_ACMEProducts_NULL_NULL_NULL_0.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_SINGLE_YBR_FULL_422_8_GEVingmedUltrasound_NULL_VIVIDE95_202.1_VividE95202.58.0_14.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_8_GEHealthcare_NULL_GDCM2.8.9_LOGIQE10R1.5.1_28.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_PhilipsMedicalSystems_NULL_ISCV4.1_EPIQCVx_5.0.2.94_18.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_PhilipsMedicalSystems_NULL_ISCV4.1_EPIQCVx_5.0.2.94_8.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_GEVingmedUltrasound_NULL_VIVIDE95_202.1_VividE95202.58.0_31.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_GEVingmedUltrasound_NULL_NULL_VividE90203.59.0_6.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_GEVingmedUltrasound_NULL_NULL_VividE90203.59.0_24.dcm
+[DcmSwift_DcmSwiftTests] Copying US_JPEGBaseline1_MULTI_YBR_FULL_422_8_GEVingmedUltrasound_NULL_ECHOPAC_203_VividE95203.66.6_16.dcm
+[DcmSwift_DcmSwiftTests] Copying US_ExplicitVRLittleEndian_SINGLE_RGB_8_AcmeProducts_NULL_NULL_NULL_19.dcm
+[DcmSwift_DcmSwiftTests] Copying US_ExplicitVRLittleEndian_MULTI_MONOCHROME2_8_AcmeProducts_NULL_NULL_NULL_29.dcm
+[DcmSwift_DcmSwiftTests] Copying US_ExplicitVRBigEndian_SINGLE_RGB_8_G.E.MedicalSystems_NULL_OFFIS-DCMTK-311_R6.1_3.dcm
+[DcmSwift_DcmSwiftTests] Copying OT_ImplicitVRLittleEndian_SINGLE_PALETTE\ COLOR_8_NULL_NULL_NULL_NULL_5.dcm
+[DcmSwift_DcmSwiftTests] Copying OT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_8_PhilipsMedicalSystems_NULL_NULL_NULL_7.dcm
+[DcmSwift_DcmSwiftTests] Copying OT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_8_PhilipsMedicalSystems_NULL_NULL_NULL_23.dcm
+[DcmSwift_DcmSwiftTests] Copying OT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_8_PhilipsMedicalSystems_NULL_NULL_NULL_11.dcm
+[DcmSwift_DcmSwiftTests] Copying NM_ExplicitVRLittleEndian_MULTI_MONOCHROME2_16_ACMEProducts_NULL_NULL_6.1.01.0_4.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_JPEGLosslessNonHierarchical14_SINGLE_MONOCHROME2_16_PhilipsMedicalSystems_NULL_NULL_RTNC1_21.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_16_SIEMENS_NULL_NULL_VB11A_10.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_16_GEMEDICALSYSTEMS_NULL_OFFIS-DCMTK-301_04_32.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_16_GEMEDICALSYSTEMS_NULL_1_2_5_NULL_13.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_ImplicitVRLittleEndian_MULTI_MONOCHROME2_Philips_RTNC1_33.dcm
+[DcmSwift_DcmSwiftTests] Copying MR_ExplicitVRLittleEndian_MULTI_MONOCHROME2_8_Philips_NULL_NULL_NULL_12.dcm
+[DcmSwift_DcmSwiftTests] Copying DICOMDIR2.dicomdir
+[DcmSwift_DcmSwiftTests] Copying DICOMDIR1.dicomdir
+[DcmSwift_DcmSwiftTests] Copying DICOMDIR0.notdicmdir
+[DcmSwift_DcmSwiftTests] Copying CT_JPEGLossless_SINGLE_MONOCHROME2_16_GEMEDICALSYSTEMS_NULL_nMar9132959_Series2.00_30.dcm
+[DcmSwift_DcmSwiftTests] Copying CT_ImplicitVRLittleEndian_SINGLE_NULL_16_SIEMENS_NULL_NULL_VB20A_17.dcm
+[DcmSwift_DcmSwiftTests] Copying CT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_8_FUJI_NULL_MITRA10SEP96_NULL_26.dcm
+[DcmSwift_DcmSwiftTests] Copying CT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_16_GEMEDICALSYSTEMS_NULL_v1.0Windows_05_1.dcm
+[DcmSwift_DcmSwiftTests] Copying CT_ImplicitVRLittleEndian_SINGLE_MONOCHROME2_16_GEMEDICALSYSTEMS_NULL_1_2_5_03_9.dcm
+[DcmSwift_DcmSwiftTests] Copying CT_ExplicitVRLittleEndian_SINGLE_MONOCHROME2_16_PickerInternationalInc._NULL_NULL_NULL_27.dcm
+[DcmSwift_DcmSwiftTests] Copying CR_ImplicitVRLittleEndian_SINGLE_MONOCHROME1_16_FUJIPHOTOFILMCO.LTD._NULL_NULL_NULL_22.dcm
+Signing DcmSwift_DcmSwiftTests.bundle (in target 'DcmSwift_DcmSwiftTests' from project 'DcmSwift')
+[Socket] Compiling SocketProtocols.swift
+[Socket] Compiling SocketUtils.swift
+[Socket] Compiling Socket.swift
+[Html] Compiling XmlRender.swift
+[Html] Compiling Tag.swift
+[Html] Compiling MediaType.swift
+[Html] Compiling Html4.swift
+[Html] Compiling Aria.swift
+[Html] Compiling Attributes.swift
+[Html] Compiling Events.swift
+[Html] Compiling ChildOf.swift
+[Html] Compiling DebugRender.swift
+[Html] Compiling HtmlRender.swift
+[Html] Compiling Node.swift
+[Html] Compiling DebugXmlRender.swift
+[Html] Compiling Elements.swift
+[DcmSwift_DcmSwiftTests] RegisterExecutionPolicyException DcmSwift_DcmSwiftTests.bundle
+[Socket] Copy arm64-apple-xros-simulator.swiftdoc -> Socket.swiftdoc
+[Socket] Copy arm64-apple-xros-simulator.swiftmodule -> Socket.swiftmodule
+[Socket] Copy arm64-apple-xros-simulator.abi.json -> Socket.abi.json
+[Socket] Copy arm64-apple-xros-simulator.swiftsourceinfo -> Socket.swiftsourceinfo
+[Html] Copy arm64-apple-xros-simulator.swiftmodule -> Html.swiftmodule
+[Html] Copy arm64-apple-xros-simulator.swiftdoc -> Html.swiftdoc
+[Html] Copy arm64-apple-xros-simulator.abi.json -> Html.abi.json
+[Html] Copy arm64-apple-xros-simulator.swiftsourceinfo -> Html.swiftsourceinfo
+[Socket] Linking Socket.o
+[DcmSwift] Copy DcmSwift.modulemap -> DcmSwift.modulemap
+[DcmSwift_DcmSwiftTests] Touching DcmSwift_DcmSwiftTests.bundle
+[DcmSwift] Compiling DataElement.swift
+[DcmSwift] Compiling DataItem.swift
+[DcmSwift] Compiling DataSequence.swift
 [DcmSwift] Compiling DataSet.swift
 [DcmSwift] Compiling DataTag.swift
+[DcmSwift] Compiling AgeString.swift
+[DcmSwift] Compiling DicomConstants.swift
+[DcmSwift] Compiling DicomData.swift
+[DcmSwift] Compiling DicomDate.swift
+[DcmSwift] Compiling Logger.swift
+[DcmSwift] Compiling TransferSyntax.swift
+[DcmSwift] Compiling UID.swift
+[DcmSwift] Compiling VR.swift
+[DcmSwift] Compiling SRItemNode.swift
+[DcmSwift] Compiling SRMeasuredValue.swift
+[DcmSwift] Compiling SRNode.swift
+[DcmSwift] Compiling SRTemplate.swift
+[DcmSwift] Compiling DataValue.swift
+[DcmSwift] Compiling PixelSequence.swift
+[DcmSwift] Compiling DicomRT.swift
+[DcmSwift] Compiling Dose.swift
+[DcmSwift] Compiling DicomError.swift
+[DcmSwift] Compiling DicomObject.swift
+[DcmSwift] Compiling DicomSpec.swift
+[DcmSwift] Compiling DicomString.swift
+[DcmSwift] Compiling DicomInputStream.swift
+[DcmSwift] Compiling DicomOutputStream.swift
+[DcmSwift] Compiling OffsetInputStream.swift
+[DcmSwift] Compiling Anonymizer.swift
+[DcmSwift] Compiling DicomImage.swift
+[!]  /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Sources/DcmSwift/Graphics/DicomImage.swift:365:16: value 'swiftUIImage' was defined but never used; consider replacing with boolean test
+        if let swiftUIImage = image as? Image {
+           ~~~~^~~~~~~~~~~~~~~      ~~~
+[DcmSwift] Compiling PixelDataAccess.swift
+[DcmSwift] Compiling DicomDir.swift
+[DcmSwift] Compiling DicomFile.swift
+[DcmSwift] Compiling DcmSwift.swift
+[DcmSwift] Compiling Dictionary.swift
+[DcmSwift] Compiling Image.swift
+[DcmSwift] Compiling Lock.swift
+[DcmSwift] Compiling Plan.swift
+[DcmSwift] Compiling StructureSet.swift
+[DcmSwift] Compiling SRCode.swift
+[DcmSwift] Compiling SRDocument.swift
+[Html] Linking Html.o
+[DcmSwift] Copy arm64-apple-xros-simulator.swiftmodule -> DcmSwift.swiftmodule
+[DcmSwift] Copy arm64-apple-xros-simulator.swiftdoc -> DcmSwift.swiftdoc
+[DcmSwift] Copy arm64-apple-xros-simulator.abi.json -> DcmSwift.abi.json
+[DcmSwift] Copy arm64-apple-xros-simulator.swiftsourceinfo -> DcmSwift.swiftsourceinfo
+[Socket] RegisterExecutionPolicyException Socket.o
+[Html] RegisterExecutionPolicyException Html.o
+[DcmSwiftTests] Compiling resource_bundle_accessor.swift
+[DcmSwiftTests] Compiling DcmSwiftTests.swift
+[DcmSwiftTests] Compiling DcmSwiftTestsDicomdir.swift
+[DcmSwiftTests] Compiling XCTestManifests.swift
+[DcmSwiftTests] Compiling DcmSwiftTestsUID.swift
+[DcmSwiftTests] Compiling DcmSwiftTestsAgeString.swift
 [DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftmodule -> DcmSwiftTests.swiftmodule
 [DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftdoc -> DcmSwiftTests.swiftdoc
 [DcmSwiftTests] Copy arm64-apple-xros-simulator.abi.json -> DcmSwiftTests.abi.json
 [DcmSwiftTests] Copy arm64-apple-xros-simulator.swiftsourceinfo -> DcmSwiftTests.swiftsourceinfo
-[DcmSwift] Compiling SRMeasuredValue.swift
-[DcmSwift] Compiling DicomData.swift
-[DcmSwift] Compiling TransferSyntax.swift
-[DcmSwift] Compiling DicomInputStream.swift
-[DcmSwift] Compiling Logger.swift
-[DcmSwift] Compiling StructureSet.swift
-[DcmSwift] Compiling SRCode.swift
-[DcmSwift] Compiling DicomObject.swift
-[DcmSwift] Compiling DicomSpec.swift
-[DcmSwift] Compiling VR.swift
-[DcmSwift] Compiling PixelSequence.swift
-[DcmSwift] Compiling DicomRT.swift
-[DcmSwift] Compiling DataElement.swift
-[DcmSwift] Compiling DataItem.swift
-[DcmSwift] Compiling DataSequence.swift
+[DcmSwift] Linking DcmSwift.o
+[DcmSwift] RegisterExecutionPolicyException DcmSwift.o
+[DcmSwiftTests] Copying DcmSwift_DcmSwiftTests.bundle
+[DcmSwiftTests] Processing empty-DcmSwiftTests.plist
+[DcmSwiftTests] Linking DcmSwiftTests
+Signing DcmSwiftTests.xctest (in target 'DcmSwiftTests' from project 'DcmSwift')
+[DcmSwiftTests] RegisterExecutionPolicyException DcmSwiftTests.xctest
+[DcmSwiftTests] Touching DcmSwiftTests.xctest
+Build Succeeded
 
 -----------------------------
 -- xcodebuild.nvim summary --
 -----------------------------
 
-Errors:
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:367:63
-    cannot find 'NSBitmapImageRep' in scope
-                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg2000)
-                                                                  ^~~~~~~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:366:25
-    value of type 'Any' has no member 'writeToFile'
-                  _ = image.writeToFile(
-                      ~~~~~ ^~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:372:63
-    cannot find 'NSBitmapImageRep' in scope
-                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.jpeg)
-                                                                  ^~~~~~~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:371:25
-    value of type 'Any' has no member 'writeToFile'
-                  _ = image.writeToFile(
-                      ~~~~~ ^~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:375:63
-    cannot find 'NSBitmapImageRep' in scope
-                    file: writePath, atomically: true, usingType: NSBitmapImageRep.FileType.bmp)
-                                                                  ^~~~~~~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:374:25
-    value of type 'Any' has no member 'writeToFile'
-                  _ = image.writeToFile(
-                      ~~~~~ ^~~~~~~~~~~
-  ✖ /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Tests/DcmSwiftTests/DcmSwiftTests.swift:623:16
-    cannot find 'Process' in scope
-        let task = Process()
-                   ^~~~~~~
+Warnings:
+   /Users/victoralves/Library/CloudStorage/GoogleDrive-victorgabr@gmail.com/My Drive/SwiftDevelopment/DcmSwift/Sources/DcmSwift/Graphics/DicomImage.swift:365:16
+    value 'swiftUIImage' was defined but never used; consider replacing with boolean test
+            if let swiftUIImage = image as? Image {
+               ~~~~^~~~~~~~~~~~~~~      ~~~
 
-  Build Failed
+  ✔ Build Succeeded
 

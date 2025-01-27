@@ -5,98 +5,98 @@ import Foundation
 import PackageDescription
 
 let filepathsinsidenetworkingIncludingSubfolders =
-  FileManager.default.subpaths(atPath: "Sources/DcmSwift/Networking") ?? []
+    FileManager.default.subpaths(atPath: "Sources/DcmSwift/Networking") ?? []
 
 let package = Package(
-  name: "DcmSwift",
-  platforms: [
-    .macOS(.v10_15),
-    .iOS(.v13),
-    .visionOS(.v1),
-  ],
-  products: [
-    // Products define the executables and libraries produced by a package, and make them visible to other packages.
-    .library(
-      name: "DcmSwift",
-      targets: ["DcmSwift"]
-    )
-    // .executable(name: "DcmAnonymize", targets: ["DcmAnonymize"]),
-    // .executable(name: "DcmPrint", targets: ["DcmPrint"]),
-    // .executable(name: "DcmServer", targets: ["DcmServer"]),
-    // .executable(name: "DcmEcho", targets: ["DcmEcho"]),
-    // .executable(name: "DcmStore", targets: ["DcmStore"]),
-    // .executable(name: "DcmSR", targets: ["DcmSR"]),
-  ],
-  dependencies: [
-    // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/Kitura/BlueSocket.git", from: "1.0.8"),
-    // .package(url: "https://github.com/apple/swift-argument-parser", from: "0.4.0")
-    .package(url: "https://github.com/pointfreeco/swift-html", from: "0.4.0"),
-    // .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
-  ],
-  targets: [
-    // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-    // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+    name: "DcmSwift",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .visionOS(.v1),
+    ],
+    products: [
+        // Products define the executables and libraries produced by a package, and make them visible to other packages.
+        .library(
+            name: "DcmSwift",
+            targets: ["DcmSwift"]
+        )
+        // .executable(name: "DcmAnonymize", targets: ["DcmAnonymize"]),
+        // .executable(name: "DcmPrint", targets: ["DcmPrint"]),
+        // .executable(name: "DcmServer", targets: ["DcmServer"]),
+        // .executable(name: "DcmEcho", targets: ["DcmEcho"]),
+        // .executable(name: "DcmStore", targets: ["DcmStore"]),
+        // .executable(name: "DcmSR", targets: ["DcmSR"]),
+    ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        .package(name: "Socket", url: "https://github.com/Kitura/BlueSocket.git", from: "1.0.8"),
+        // .package(url: "https://github.com/apple/swift-argument-parser", from: "0.4.0")
+        .package(url: "https://github.com/pointfreeco/swift-html", from: "0.4.0"),
+        // .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
 
-    .target(
-      name: "DcmSwift",
-      dependencies: [
-        "Socket",  //, .product(name: "NIO", package: "swift-nio"),
-        .product(name: "Html", package: "swift-html"),
-      ]
-    ),
+        .target(
+            name: "DcmSwift",
+            dependencies: [
+                "Socket",  //, .product(name: "NIO", package: "swift-nio"),
+                .product(name: "Html", package: "swift-html"),
+            ]
+        ),
 
-    // .target(
-    //   name: "DcmAnonymize",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmPrint",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmSR",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmServer",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmEcho",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmStore",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    // .target(
-    //   name: "DcmFind",
-    //   dependencies: [
-    //     "DcmSwift",
-    //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    //   ]),
-    .testTarget(
-      name: "DcmSwiftTests",
-      dependencies: ["DcmSwift"],
-      resources: [
-        .process("Resources/DICOM"),
-        .process("Resources/DICOMDIR"),
-        .process("Resources/SR"),
-        .process("Resources/RT"),
-      ]
-    ),
-  ]
+        // .target(
+        //   name: "DcmAnonymize",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmPrint",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmSR",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmServer",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmEcho",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmStore",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        // .target(
+        //   name: "DcmFind",
+        //   dependencies: [
+        //     "DcmSwift",
+        //     .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        //   ]),
+        .testTarget(
+            name: "DcmSwiftTests",
+            dependencies: ["DcmSwift"],
+            resources: [
+                .process("Resources/DICOM"),
+                .process("Resources/DICOMDIR"),
+                .process("Resources/SR"),
+                .process("Resources/RT"),
+            ]
+        ),
+    ]
 )
